@@ -25,8 +25,8 @@ export function homeWordCount(data) {
   const bodytxt = $("body").text();
   const words = bodytxt.split(/\s+/);
 
-  // const len = words ? words.length : 0;
-  let len;
+ 
+  let len = 0;
   words !== null ? (len = words.length) : (len = 0);
   return { words, len };
 }
