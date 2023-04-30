@@ -1,8 +1,9 @@
 const cloudinary = require("cloudinary").v2;
 
-const puppeteer = require("puppeteer-extra");
-const StealthPlugin = require("puppeteer-extra-plugin-stealth");
-puppeteer.use(StealthPlugin());
+const puppeteer = require("puppeteer");
+// const puppeteer = require("puppeteer-extra");
+// const StealthPlugin = require("puppeteer-extra-plugin-stealth");
+// puppeteer.use(StealthPlugin());
 
 async function uploadImg(allImgLinks, mainurl) {
   // Configuration
