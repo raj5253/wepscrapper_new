@@ -41,7 +41,7 @@ export default async function scrap(req, res) {
       await storeToDB(words); //storing to mongodb atlas
 
       // console.log(enteredUrl);
-      const resp = await fetch(`${process.env.VERCEL_URL}/api/extractpic`, {
+      const resp = await fetch("https://wepscrapper-new.vercel.app/api/extractpic", {
         method: "POST",
         body: JSON.stringify({ enteredUrl: enteredUrl }),
         headers: {
