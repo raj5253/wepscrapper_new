@@ -49,7 +49,8 @@ export default async function scrap(req, res) {
         },
       });
       const datajs = await resp.json();
-      // console.log(datajs);
+      console.log(datajs);
+      
       const { allImgCloudLinks } = datajs;
       console.log(allImgCloudLinks);
 
