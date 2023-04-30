@@ -26,7 +26,7 @@ const Inputcomp = () => {
 
     if (urlentered) {
       try {
-        const response = await fetch("https://wepscrapper-new.vercel.app/api/scrap", {
+        const response = await fetch(`${process.env.VERCEL_URL}/api/scrap`, {
           method: "POST",
           body: JSON.stringify({
             enteredUrl: urlentered,
