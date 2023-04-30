@@ -8,6 +8,7 @@ import Inputcomp from "@/component/inputurl/inputcomp";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  {console.log(process.env.VERCEL_URL); }
   return (
     <div className={styles.container}>
       <Head>
