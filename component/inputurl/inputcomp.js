@@ -26,7 +26,7 @@ const Inputcomp = () => {
 
     if (urlentered) {
       try {
-        const response = await fetch(`${process.env.VERCEL_URL}/api/scrap`, {
+        const response = await fetch("https://blog.hubspot.com/website/simple-website-examples/api/scrap", {
           method: "POST",
           body: JSON.stringify({
             enteredUrl: urlentered,
