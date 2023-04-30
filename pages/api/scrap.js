@@ -28,7 +28,7 @@ export default async function scrap(req, res) {
 
       const links = getHiddenLinks(data);
 
-      const { words, homecount } = homeWordCount(data);
+      const { words, len } = homeWordCount(data);
 
       const { emailsCout, contactnumCount } = getEmails(data);
 
@@ -56,7 +56,7 @@ export default async function scrap(req, res) {
 
       res.json({
         msg: "done",
-        homecount: homecount,
+        homecount: len,
         titleCount: titleCount,
         metaCount: metaCount,
         emails: emailsCout,
